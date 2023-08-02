@@ -1,9 +1,9 @@
 import 'package:go_router/go_router.dart';
-import 'package:web_rportifolio/features/presentation/pages/splash/splash.dart';
+import 'package:web_rportifolio/features/shell/presentation/pages/splash/splash.dart';
 import 'package:web_rportifolio/helpers/utils.dart';
 
-import '../features/presentation/pages/shell/portfoliomain.page.dart';
-import '../features/presentation/pages/welcome/welcome.page.dart';
+import '../features/shell/presentation/pages/portfoliomain.page.dart';
+import '../features/shell/presentation/pages/welcome/welcome.page.dart';
 
 class AppRoutes {
   static final router = GoRouter(
