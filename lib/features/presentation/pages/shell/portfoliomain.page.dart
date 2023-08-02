@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_rportifolio/features/navigation/presentation/widgets/left_navigation.dart';
 import 'package:web_rportifolio/helpers/utils.dart';
 
 class PortfolioMainPage extends StatelessWidget {
@@ -12,6 +13,18 @@ class PortfolioMainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(key: Utils.mainScaffold, body: child);
+    return Scaffold(
+        key: Utils.mainScaffold,
+        body: Stack(
+          children: [
+            Center(
+              child: child,
+            ),
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: LeftNavigation(),
+            )
+          ],
+        ));
   }
 }
