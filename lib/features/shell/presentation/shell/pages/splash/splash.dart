@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:web_rportifolio/features/presentation/pages/shell/portfoliomain.page.dart';
-import 'package:web_rportifolio/features/presentation/pages/welcome/welcome.page.dart';
-import 'package:web_rportifolio/features/presentation/widgets/splash_loading.dart';
+import 'package:web_rportifolio/features/shell/presentation/pages/welcome/welcome.page.dart';
+import 'package:web_rportifolio/features/shell/presentation/widgets/splash_loading.dart';
 import 'package:web_rportifolio/helpers/utils.dart';
 import 'package:web_rportifolio/styles/colors.dart';
 
