@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../feature/github/presentation/pages/github.page.dart';
+import '../feature/linkedin/presentation/pages/linkedin.page.dart';
+import '../feature/welcome/presentation/pages/welcome.page.dart';
+import '../feature/twitter/presentation/pages/twitter.page.dart';
+import '../feature/web/presentation/pages/web.page.dart';
+
 class PersonalPortfolioColors {
   // for the dark theme
   static const Color mainBlue = Color(0xFF51BFD7);
@@ -38,4 +44,27 @@ class PersonalPortfolioColors {
   static const Color githubIcon = Color(0xFFBEBEBE);
   static const Color githubPrimary = Color(0xFF6C6C6C);
   static const Color githubSecondary = Color(0xFF3B3B3B);
+
+  static Map<String, LinearGradient> pageColor = {
+    WelcomePage.route: const LinearGradient(colors: [
+      PersonalPortfolioColors.welcomePrimary,
+      PersonalPortfolioColors.welcomeSecondary
+    ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+    TwitterPage.route: const LinearGradient(colors: [
+      PersonalPortfolioColors.twitterPrimary,
+      PersonalPortfolioColors.twitterSecondary
+    ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+    LinkedInPage.route: const LinearGradient(colors: [
+      PersonalPortfolioColors.linkedInPrimary,
+      PersonalPortfolioColors.linkedInSecondary
+    ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+    WebPage.route: const LinearGradient(colors: [
+      PersonalPortfolioColors.webPrimary,
+      PersonalPortfolioColors.webSecondary
+    ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+    GithubPage.route: const LinearGradient(colors: [
+      PersonalPortfolioColors.githubPrimary,
+      PersonalPortfolioColors.githubSecondary
+    ], begin: Alignment.topCenter, end: Alignment.bottomCenter)
+  };
 }
